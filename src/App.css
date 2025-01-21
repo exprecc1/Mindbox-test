@@ -1,0 +1,129 @@
+:root {
+  --primary-color: #6200ee;
+  --primary-light: #bb86fc;
+  --background: #f5f5f5;
+  --text-color: #333;
+  --text-light: #fff;
+  --border-radius: 8px;
+  --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: var(--background);
+  color: var(--text-color);
+}
+
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: var(--text-light);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+}
+
+h1 {
+  text-align: center;
+  color: var(--primary-color);
+}
+
+form {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+input[type='text'] {
+  flex: 1;
+  padding: 10px;
+  border: 2px solid var(--primary-light);
+  border-radius: var(--border-radius);
+  font-size: 16px;
+  outline: none;
+}
+
+button {
+  padding: 10px 20px;
+  margin-left: 10px;
+  background-color: var(--primary-color);
+  color: var(--text-light);
+  border: none;
+  border-radius: var(--border-radius);
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--primary-light);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  margin: 10px 0;
+  background-color: var(--background);
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+li:hover {
+  background-color: var(--primary-light);
+  color: var(--text-light);
+}
+
+li.completed {
+  text-decoration: line-through;
+  opacity: 0.7;
+}
+
+h2 {
+  margin-top: 20px;
+  color: var(--primary-color);
+}
+
+.filters {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.filters button {
+  padding: 8px 16px;
+  background-color: var(--primary-light);
+  color: var(--text-color);
+  border: none;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.filters button:hover {
+  background-color: var(--primary-color);
+  color: var(--text-light);
+}
+
+.clear-completed {
+  display: block;
+  margin: 20px auto 0;
+  padding: 8px 16px;
+  background-color: #ff6b6b;
+  color: var(--text-light);
+  border: none;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.clear-completed:hover {
+  background-color: #ff4c4c;
+}
